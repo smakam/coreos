@@ -1,5 +1,8 @@
 #cloud-config
 
+# include one or more SSH public keys
+ssh_authorized_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCiIAgF3YTvfgNvpPIr3nHfB/Jczcc9Pg6q4yu5nlKiu4N4FA6vobDbW2OEoeBYJBNosSEvat7wMuZFDYWRAdK/gZe/BRzsO5y7udDrxdAE8Us+ycEHsJT0mIiDghN0zYaR0GhWN8QnYK3XFnWjNCp7Om+AgpoAYWT65E0tp+8l6oxGDcUrqzZiLNHRslTpq4BWyJJrBpviAti//qWkpb+KeBFjN2WeVe8jePaw2k5IAocv4i4qqQyCnx0hOZ6SC2I08pMOSOlXUswlWnXiKVGdwl7ExTSfTW1XuiEYJXgJeeWOt6liSkpsrgQsHRBdwu8Y4Oimy0xdAYxbmdXY6Yfr
 coreos:
   etcd2:
     # Static cluster
